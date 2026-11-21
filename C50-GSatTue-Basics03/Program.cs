@@ -159,14 +159,27 @@ namespace C50_GSatTue_Basics03
 
             #region question 17
             //Q17. Using the same books array, loop through it and print each title, but stop completely (break) once you reach "Refactoring"
+            //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            //for(int i=0;i<books.Length;i++)
+            //{
+            //    if (books[i]== "Refactoring")
+            //    {
+            //        break;
+            //    }
+            //    Console.WriteLine($"{i+1} {books[i]}");
+            //}
+            #endregion
+
+            #region question 18
+            //Q18.Using the same books array, print every title except "The Pragmatic Programmer" (skip it with continue, don't stop the loop).
             string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
-            for(int i=0;i<books.Length;i++)
+            for (int i = 0; i < books.Length; i++)
             {
-                if (books[i]== "Refactoring")
+                if (books[i] == "The Pragmatic Programmer")
                 {
-                    break;
+                    continue;
                 }
-                Console.WriteLine($"{i+1} {books[i]}");
+                Console.WriteLine($"{i + 1} {books[i]}");
             }
             #endregion
 
