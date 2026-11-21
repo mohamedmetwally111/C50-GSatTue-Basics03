@@ -34,11 +34,19 @@ namespace C50_GSatTue_Basics03
 
             #region question 4
             //Q4. Using the StringBuilder from the question above, use Replace() to change "Book List" into "Library". Print the result.
-            StringBuilder Sb = new StringBuilder();
-            Sb.Append("Book List");
-            Sb.Append(" - Update");
-            Sb.Replace("Book List", "Library");
-            Console.WriteLine(Sb);
+            //StringBuilder Sb = new StringBuilder();
+            //Sb.Append("Book List");
+            //Sb.Append(" - Update");
+            //Sb.Replace("Book List", "Library");
+            //Console.WriteLine(Sb);
+            #endregion
+
+            #region question 5
+            //Q5. Given string title = "Clean Code"; and int pages = 464;, build the sentence "Book: Clean Code, Pages: 464" using the + operator.
+            string Title= "Clean Code";
+            int pages = 464;
+            string result = "Book: " + Title + ", Pages: " + pages;
+            Console.WriteLine(result);
             #endregion
 
         }
