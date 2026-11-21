@@ -51,10 +51,18 @@ namespace C50_GSatTue_Basics03
 
             #region question 6
             //Q6. Build the same sentence as above, but using string interpolation ($"..."). 
-            string Title= "Clean Code";
-            int pages = 464;
-            string result = $"Book: {Title}, Pages: {pages}";
-            Console.WriteLine(result);
+            //string Title= "Clean Code";
+            //int pages = 464;
+            //string result = $"Book: {Title}, Pages: {pages}";
+            //Console.WriteLine(result);
+            #endregion
+
+            #region question 7
+            //Q7. Build the same sentence as above, but using string interpolation ($"..."). 
+            //string Title= "Clean Code";
+            //int pages = 464;
+            //string result = $"Book: {Title}, Pages: {pages}";
+            //Console.WriteLine(result);
             #endregion
 
         }
