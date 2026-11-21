@@ -43,9 +43,17 @@ namespace C50_GSatTue_Basics03
 
             #region question 5
             //Q5. Given string title = "Clean Code"; and int pages = 464;, build the sentence "Book: Clean Code, Pages: 464" using the + operator.
+            //string Title= "Clean Code";
+            //int pages = 464;
+            //string result = "Book: " + Title + ", Pages: " + pages;
+            //Console.WriteLine(result);
+            #endregion
+
+            #region question 6
+            //Q6. Build the same sentence as above, but using string interpolation ($"..."). 
             string Title= "Clean Code";
             int pages = 464;
-            string result = "Book: " + Title + ", Pages: " + pages;
+            string result = $"Book: {Title}, Pages: {pages}";
             Console.WriteLine(result);
             #endregion
 
