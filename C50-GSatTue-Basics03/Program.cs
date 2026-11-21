@@ -65,6 +65,14 @@ namespace C50_GSatTue_Basics03
             //Console.WriteLine(result);
             #endregion
 
+            #region question 8
+            //Q8. Build the same sentence again, but using string.Format(). 
+            string Title= "Clean Code";
+            int pages = 464;
+            string result = string.Format("Book: {0}, Pages {1}",Title,pages);
+            Console.WriteLine(result);
+            #endregion
+
         }
     }
 }
