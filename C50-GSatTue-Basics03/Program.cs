@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Runtime.Intrinsics.X86;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Channels;
@@ -172,17 +173,34 @@ namespace C50_GSatTue_Basics03
 
             #region question 18
             //Q18.Using the same books array, print every title except "The Pragmatic Programmer" (skip it with continue, don't stop the loop).
-            string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
-            for (int i = 0; i < books.Length; i++)
-            {
-                if (books[i] == "The Pragmatic Programmer")
-                {
-                    continue;
-                }
-                Console.WriteLine($"{i + 1} {books[i]}");
-            }
+            //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            //for (int i = 0; i < books.Length; i++)
+            //{
+            //    if (books[i] == "The Pragmatic Programmer")
+            //    {
+            //        continue;
+            //    }
+            //    Console.WriteLine($"{i + 1} {books[i]}");
+            //}
+            #endregion
+
+            #region question 19
+            //Q19. Write a method PrintFirstBook() that prints the first book in the books array. If the array is empty, use return to exit the method early instead of printing anything. 
+            //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            //PrintFirstBook(books);
             #endregion
 
         }
+
+        #region question 19
+        //static void PrintFirstBook( string[] Arr)
+        //{
+        //    if(Arr.Length==0)
+        //    {
+        //        return;
+        //    }
+        //    Console.WriteLine(Arr[0]); 
+        //}
+        #endregion
     }
 }
