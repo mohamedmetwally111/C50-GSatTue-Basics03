@@ -129,13 +129,23 @@ namespace C50_GSatTue_Basics03
 
             #region question 14
             //Q14. Using the same books array, use a while loop to print every book title. 
-            string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
-            int i = 0;
-            while(i<books.Length)
+            //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            //int i = 0;
+            //while(i<books.Length)
+            //{
+            //    Console.WriteLine($"{i+1}. {books[i]}");
+            //    i++;
+            //}
+            #endregion
+
+            #region question 15
+            //Q15. Write a do-while loop that prints "Checking book..." exactly 3 times. 
+            int i = 1;
+            do
             {
-                Console.WriteLine($"{i+1}. {books[i]}");
+                Console.WriteLine("Checking book...");
                 i++;
-            }
+            } while (i<4);
             #endregion
 
         }
